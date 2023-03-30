@@ -1,0 +1,119 @@
+.header__section {
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: yellow
+}
+
+.header__container {
+    @extend %container;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // border: 1px solid yellow;
+    // background-color: yellow;
+    
+    @media screen and (max-width: 1365px) {
+        position: relative;
+    }
+}
+.header-logo {
+    color: $primary-text-color;
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+
+    @media screen and (min-width: 768px) {
+        font-weight: 700;
+        font-size: 45px;
+        line-height: 1.25;
+    }
+    @media screen and (min-width: 1366px) {
+        flex-shrink: 0;
+        margin-right: 144px;
+    }
+}
+.site-nav {
+    padding-left: 20px;
+    padding-right: 40px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+   
+    @media screen and (min-width: 768px)  {
+        max-width: 332px;
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: auto;
+        margin-right: 0;
+        // margin-left: 200px;
+        
+    }
+    
+    @media screen and (min-width: 1366px) {
+        margin-bottom: 0;
+        padding-left: 0;
+        padding-right: 0;
+        margin-top: 0;
+    }
+}
+.site-nav__list {
+    @media screen and (min-width: 1366px) {
+        display: flex;
+        align-items: center;
+    }
+    @media screen and (min-width: 768px){
+        display: flex;
+    }
+}
+
+.site-nav__item {
+    @media screen and (min-width: 1366px) {
+        
+        &:not(:last-child) {
+            margin-right: 40px;
+        }
+    }  
+    @media screen and (min-width: 768px){
+        &:not(:last-child) {
+            margin-right: 24px;
+           
+        }
+      
+    }  
+}
+.site-nav__link {
+    display: block;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 1.8;
+    letter-spacing: 0.03em;
+    color: black;
+    transition: color $transition;
+
+    &:hover,
+    &:focus {
+        color: yellowgreen;
+    }
+
+    @media screen and (min-width: 768px) {
+        font-size: 26px; 
+        display: flex;
+       
+    }
+
+    @media screen and (min-width: 1366px) {
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 1.21;
+        text-transform: uppercase;
+        
+    }
+}
+
+
+.header__svgqw:hover{
+    fill: yellowgreen;
+}

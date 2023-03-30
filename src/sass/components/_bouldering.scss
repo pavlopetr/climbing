@@ -1,0 +1,75 @@
+.bouldering__section{
+    background-color: $background-color-section;
+    min-height: 500px;
+    padding-top: 90px;
+
+    @media screen and (min-width: 768px) {
+        padding-top: 162px;
+    }
+    @media screen and (min-width: 1366px) {
+        min-height: 878px;
+        padding-top: 185px;
+            // background-image:url(../images/bgimg.jpeg);
+            // background-repeat: no-repeat;
+            // background-size: cover;
+    }
+}
+
+.bouldering__container{
+    @extend %container;
+    border: 1px solid yellow;
+
+    
+  
+    
+
+    @media screen and (min-width: 768px) {
+        position: relative;
+        display: flex;
+       
+        
+    }
+    @media screen and (min-width: 1366px) {
+
+       
+    }
+}
+.bouldering__title{
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 1.2;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: $primary-text-color;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    // display: flex;
+    // align-items: center;
+   
+}
+.bouldering__descr{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.18em;
+    // text-transform: uppercase;
+    color: white;
+}
+.bouldering__img{
+    width: 320px;
+    height: 200px;
+    border-radius: 30;
+    // padding: 20px;
+    margin: 15px;
+    box-shadow: white;
+    
+}
+.bouldering__box{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+    
+}
+.bouldering__line{
+    width: 200px;
+}
