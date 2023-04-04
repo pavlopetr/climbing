@@ -1,8 +1,8 @@
-.bouldering__section{
+.rope__section{
     background-color: $background-color-section;
     min-height: 500px;
-    padding-top: 90px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),url(../images/boulderingbg.jpeg);
+    // padding-top: 90px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),url(../images/rope12.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -17,10 +17,8 @@
             // background-size: cover;
     }
 }
-
-.bouldering__container{
+.rope__container{
     @extend %container;
-
     @media screen and (min-width: 768px) {
         position: relative;
         display: flex;
@@ -32,7 +30,7 @@
        
     }
 }
-.bouldering__title{
+.rope__title{
     font-weight: 700;
     font-size: 45px;
     line-height: 1.2;
@@ -41,36 +39,12 @@
     color: $primary-text-color;
     padding-top: 20px;
     padding-bottom: 20px;
-    // display: flex;
-    // align-items: center;
-   
 }
-.bouldering__descr{
+.rope__descr{
     font-weight: 700;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.18em;
     // text-transform: uppercase;
     color: white;
-}
-.bouldering__img{
-    width: 320px;
-    height: 200px;
-    border-radius: 30;
-    // padding: 20px;
-    margin: 15px;
-    box-shadow: white;
-    
-}
-.bouldering__box{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 25px;
-    
-}
-.bouldering__line{
-    width: 200px;
-}
-.bouldering__descr:hover{
-    background-color: black;
 }
