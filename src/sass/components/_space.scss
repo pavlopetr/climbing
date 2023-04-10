@@ -1,0 +1,93 @@
+.space__section{
+    background-color: $background-color-section;
+   
+    min-height: 500px;
+    padding-top: 90px;
+    // background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),url(../images/space2.jpeg);
+    // background-repeat: no-repeat;
+    // background-size: cover;
+
+    @media screen and (min-width: 768px) {
+        padding-top: 162px;
+    }
+    @media screen and (min-width: 1366px) {
+        min-height: 878px;
+        padding-top: 50px;
+        // display: block;
+            // background-image:url(../images/bgimg.jpeg);
+            // background-repeat: no-repeat;
+            // background-size: cover;
+    }
+}
+
+.space__container{
+    @extend %container;
+    @media screen and (min-width: 768px) {
+        position: relative;
+     
+       
+        
+    }
+    @media screen and (min-width: 1366px) {
+       
+       
+    }
+}
+.spce__holes{
+    display: flex;
+    flex-wrap: wrap;
+    
+   
+   
+}
+.spce__img{
+    width: 350px;
+    height: 270px;
+    padding: 5px;
+    margin-left: 23px;
+    margin-top: 23px;
+   
+}
+.space__img-wraper{
+    width: 400px;
+  
+  
+    
+}
+.spase__holes-list{
+    margin: 10px;
+    background-image: url(../images/Group\ 141.png);
+    background-position-y: 213px;
+    background-repeat: no-repeat;
+  
+  
+}
+.spase__places{
+  
+}
+.spase__name{
+   text-align: center;
+   text-transform: uppercase;
+
+}
+.spase__location{
+   
+    
+}
+.space__location-wraper {
+    text-align: center;
+    padding-bottom: 20px;
+   
+   
+   
+}
+.space__title{
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 1.2;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: $primary-text-color;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}

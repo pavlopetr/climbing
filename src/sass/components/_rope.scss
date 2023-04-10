@@ -12,22 +12,16 @@
     @media screen and (min-width: 1366px) {
         min-height: 878px;
         padding-top: 50px;
-            // background-image:url(../images/bgimg.jpeg);
-            // background-repeat: no-repeat;
-            // background-size: cover;
     }
 }
+
 .rope__container{
     @extend %container;
     @media screen and (min-width: 768px) {
         position: relative;
         display: flex;
-       
-        
     }
-    @media screen and (min-width: 1366px) {
-
-       
+    @media screen and (min-width: 1366px) {  
     }
 }
 .rope__title{
