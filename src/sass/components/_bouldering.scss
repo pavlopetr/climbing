@@ -1,4 +1,5 @@
 .bouldering__section{
+   
     background-color: $background-color-section;
     min-height: 500px;
     padding-top: 90px;
@@ -19,6 +20,7 @@
 }
 
 .bouldering__container{
+   
     @extend %container;
 
     @media screen and (min-width: 768px) {
@@ -28,11 +30,13 @@
         
     }
     @media screen and (min-width: 1366px) {
-
+        position: sticky;
+    top: -1px;
        
     }
 }
 .bouldering__title{
+   
     font-weight: 700;
     font-size: 45px;
     line-height: 1.2;
@@ -46,6 +50,7 @@
    
 }
 .bouldering__descr{
+  
     font-weight: 700;
     font-size: 20px;
     line-height: 1.2;

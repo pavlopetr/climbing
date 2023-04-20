@@ -22,6 +22,8 @@
         display: flex;
     }
     @media screen and (min-width: 1366px) {  
+        position: sticky;
+        top: -1px;
     }
 }
 .rope__title{
