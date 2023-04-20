@@ -21,6 +21,7 @@
 }
 .header-logo {
     color: $primary-text-color;
+    
     &:hover,
     &:focus {
         color: $accent-color;
@@ -92,10 +93,13 @@
     letter-spacing: 0.03em;
     color: black;
     transition: color $transition;
+    padding: 5px;
 
     &:hover,
     &:focus {
-        color: yellowgreen;
+  border-radius: 4px;
+        color:gray;
+        box-shadow: inset 0 0 10px 5px rgba(0, 0, 0, 0.3);
     }
 
     @media screen and (min-width: 768px) {
@@ -115,5 +119,6 @@
 
 
 .header__svgqw:hover{
-    fill: yellowgreen;
+    fill:grey;
+   
 }
