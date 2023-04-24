@@ -17,16 +17,16 @@
 
 .space__container{
     @extend %container;
-    @media screen and (min-width: 768px) {
-        position: relative;
+    // @media screen and (min-width: 768px) {
+    //     position: relative;
      
        
         
-    }
-    @media screen and (min-width: 1366px) {
+    // }
+    // @media screen and (min-width: 1366px) {
        
        
-    }
+    // }
 }
 .spce__holes{
     display: flex;

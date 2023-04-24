@@ -10,13 +10,14 @@
 .header__container {
     @extend %container;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    // border: 1px solid yellow;
-    // background-color: yellow;
+
+    // justify-content: space-between;
+    // align-items: center;
+
     
     @media screen and (max-width: 1365px) {
         position: relative;
+       
     }
 }
 .header-logo {
@@ -42,22 +43,24 @@
     padding-right: 40px;
     margin-bottom: 50px;
     margin-top: 50px;
+    // display: none;
    
     @media screen and (min-width: 768px)  {
-        max-width: 332px;
+        // max-width: 332px;
         padding-left: 0;
         padding-right: 0;
         margin-left: auto;
         margin-right: 0;
         // margin-left: 200px;
+        // display: none;
         
     }
     
     @media screen and (min-width: 1366px) {
         margin-bottom: 0;
-        padding-left: 0;
+        padding-left: 10px;
         padding-right: 0;
-        margin-top: 0;
+        margin-top: 15px;
     }
 }
 .site-nav__list {
