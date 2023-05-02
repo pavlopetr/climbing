@@ -1,6 +1,6 @@
 .space__section{
     min-height: 500px;
-    padding-top: 90px;
+    padding-top: 16px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),url(../images/space2.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -19,10 +19,10 @@
 
 .space__container{
     @extend %container;
-    // @media screen and (min-width: 768px) {
-    //     position: relative;
-     
-       
+
+    @media screen and (min-width: 768px) {
+    margin-left: 48px;
+    }
         
     // }
     // @media screen and (min-width: 1366px) {
@@ -36,10 +36,10 @@
     margin-left: -63px;
     border-radius: 4px;
     @media screen and (min-width: 768px) {
-       
+        margin-left: -45px;
     }
     @media screen and (min-width: 1366px) {
-        margin-left: 25px;
+        margin-left: 35px;
        
     }
     
@@ -54,10 +54,30 @@
     margin-top: 25px;
     // border: 1px solid wheat;
     border-radius: 22px;
+    @media screen and (min-width: 768px) {
+        width: 321px;
+        height: 265px;
+        border-radius: 22px;
+        margin-top: 25px;
+        margin-left: 6px;
+        padding: 5px;
+    }
+    @media screen and (min-width: 1366px) {
+        width: 385px;
+        height: 280px;
+    }
+    
    
 }
 .space__img-wraper{
     width: 400px;   
+    @media screen and (min-width: 768px) {
+        width: 335px;
+    }
+    @media screen and (min-width: 1366px) {
+        width: 400px;
+       
+    }
     
   
   
@@ -119,7 +139,7 @@
     justify-content: space-evenly;
 
     @media screen and (min-width: 768px) {
-       
+        margin-left: -51px;
         display: flex;
         padding-top: 10px;
     padding-bottom: 10px;
