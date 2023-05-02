@@ -7,11 +7,14 @@
     background-size: cover;
 
     @media screen and (min-width: 768px) {
-        padding-top: 162px;
+        padding-top: 16px;
     }
     @media screen and (min-width: 1366px) {
         min-height: 878px;
         padding-top: 50px;
+            // background-image:url(../images/bgimg.jpeg);
+            // background-repeat: no-repeat;
+            // background-size: cover;
     }
 }
 
@@ -27,14 +30,37 @@
     }
 }
 .rope__title{
-    font-weight: 700;
-    font-size: 45px;
-    line-height: 1.2;
-    letter-spacing: 0.18em;
+    letter-spacing: .18em;
     text-transform: uppercase;
-    color: $primary-text-color;
+    color: #ff0;
+    align-items: center;
     padding-top: 20px;
     padding-bottom: 20px;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 1.2;
+    display: flex;
+    justify-content: space-evenly;
+
+    @media screen and (min-width: 768px) {
+       
+        display: flex;
+        padding-top: 10px;
+    padding-bottom: 10px;
+        
+    }
+    @media screen and (min-width: 1366px) {
+        letter-spacing: .18em;
+        text-transform: uppercase;
+        color: #ff0;
+        // align-items: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 45px;
+        font-weight: 700;
+        line-height: 1.2;
+       
+    }
 }
 .rope__descr{
     font-weight: 700;

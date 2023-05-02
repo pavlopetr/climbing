@@ -2,13 +2,13 @@
    
     background-color: $background-color-section;
     min-height: 500px;
-    padding-top: 90px;
+    padding-top: 16px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),url(../images/boulderingbg.jpeg);
     background-repeat: no-repeat;
-    background-size: cover;
+    // background-size: cover;
 
     @media screen and (min-width: 768px) {
-        padding-top: 162px;
+        padding-top: 16px;
     }
     @media screen and (min-width: 1366px) {
         min-height: 878px;
@@ -37,16 +37,37 @@
 }
 .bouldering__title{
    
-    font-weight: 700;
-    font-size: 45px;
-    line-height: 1.2;
-    letter-spacing: 0.18em;
+    letter-spacing: .18em;
     text-transform: uppercase;
-    color: $primary-text-color;
+    color: #ff0;
+    align-items: center;
     padding-top: 20px;
     padding-bottom: 20px;
-    // display: flex;
-    // align-items: center;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 1.2;
+    display: flex;
+    justify-content: space-evenly;
+
+    @media screen and (min-width: 768px) {
+       
+        display: flex;
+        padding-top: 10px;
+    padding-bottom: 10px;
+        
+    }
+    @media screen and (min-width: 1366px) {
+        letter-spacing: .18em;
+        text-transform: uppercase;
+        color: #ff0;
+        // align-items: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 45px;
+        font-weight: 700;
+        line-height: 1.2;
+       
+    }
    
 }
 .bouldering__descr{
