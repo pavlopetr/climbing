@@ -242,3 +242,24 @@
     }
 
 }  
+// background gradient
+
+.gradient {
+    // height: 300px; // Тут высота блока
+    width: 100%; // Тут длина
+    background: linear-gradient(90deg, rgba(236,224,11,1) 0%, rgba(192,231,16,0.9990589985994398) 43%, rgba(149,255,0,1) 100%);;
+    animation: gradient 10s infinite linear; // 10s - скорость анимации
+    background-size: 400%; // Можно менять и подбирать интенсивность
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 80% 0%;
+    }
+    50% {
+        background-position: 20% 100%;
+    }
+    100% {
+        background-position: 80% 0%;
+    }
+}
