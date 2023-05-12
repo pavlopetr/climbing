@@ -15,7 +15,7 @@
   @extend %container;
 }
 .hero__title {
-  color: yellow;
+  color:$primary-text-color;
   text-transform: uppercase;
   font-weight: 800;
   font-size: 25px;
