@@ -10,18 +10,17 @@
 .header__container {
   @extend %container;
   display: flex;
-
   @media screen and (max-width: 1365px) {
     position: relative;
   }
 }
+
 .header-logo {
   color: $primary-text-color;
   transition: color $transition;
   &:hover,
   &:focus {
     color: $accent-color;
-    
   }
 
   @media screen and (min-width: 768px) {
