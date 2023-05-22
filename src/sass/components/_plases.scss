@@ -1,6 +1,5 @@
 .places__section{
-   //  background-color: $background-color-section;
-    height: 940px;
+   height: 1030px;
     padding-top: 16px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),url(../images/plases.jpeg);
     background-repeat: no-repeat;
@@ -19,13 +18,6 @@
 
 .places__container{
     @extend %container;
-    
-    @media screen and (min-width: 768px) {
-        position: relative; 
-    }
-    @media screen and (min-width: 1366px) {
-   
-    }
 }
 .places__title{
     letter-spacing: .18em;
@@ -38,16 +30,11 @@
     display: flex;
     justify-content: space-evenly;
     @media screen and (min-width: 768px) {
-      // display: flex;
       padding-top: 10px;
       padding-bottom: 10px; 
-      align-items: center;
       margin-left: 66px
     }
     @media screen and (min-width: 1366px) {
-        letter-spacing: .18em;
-        text-transform: uppercase;
-        color:$primary-text-color;
         padding-top: 20px;
         padding-bottom: 30px;
         font-size: 45px;
@@ -56,51 +43,26 @@
     }
    
 }
-
-// * {
-//    margin: 0;
-//    padding: 0;
-//    box-sizing: border-box;
-//  }
- 
-//  html, body {
-//    height: 100vh;
-//    font-family: 'Open Sans', sans-serif;
-//    background-color: #666666;
-//  }
- 
-//  body {
-//    display: flex;
-//    align-items: center;
-//    justify-content: center;
-//  }
  
  .card {
-   position: absolute;
-   height: 640px;
+   height:770px;;
    width: 380px;   
-   margin:  0 auto;
    background-color: #ffffff;
    border-radius: 25px;
    box-shadow: inset 0 0 10px 5px rgba(236, 224, 11, 1);
-   left: 5px;
+   margin-left: -53px;
    
    @media screen and (min-width: 768px) {
       margin:  0 auto;
       width: 555px;
       left: 86px;
-      // padding-top: 15px;
+      margin-left: 62px;
    }
    @media screen and (min-width: 1366px) {
-   position: absolute;
-   height: 350px;
+   height: 450px;
    width: 100%;
    max-width: 850px;
-   margin:  0 auto;
-   background-color: #ffffff;
-   border-radius: 25px;
-   box-shadow: inset 0 0 10px 5px rgba(236, 224, 11, 1);
-   left: 265px;
+   margin-left: 260px;
    }
  }
  
@@ -118,12 +80,13 @@
    }
    @media screen and (min-width: 1366px) {
    display: flex;
-   align-items: center;
+   align-items: stretch;
    justify-content: center;
    padding: 0 0 0 30px;
    height: 350px;
-   width: 850px;
-   position: absolute;
+   width: 800px;
+   // position: absolute;
+   padding-top: 50px;
  }
 }
  
@@ -142,8 +105,8 @@
  }
  
  #slideImg:checked ~ .inner_part .img {
-  height: 350px;
-  width: 850px;
+  height: 450px;
+  width: 900px;
   z-index: 99;
   transition: .3s .2s ease-in;
  }
@@ -165,7 +128,6 @@
  }
  
  .content {
-   // width: 400px;
    opacity: 0;
    transition: .6s; 
    @media screen and (min-width: 768px) {
@@ -209,10 +171,6 @@
       color: #0d0925;
       margin: 0 0 20px 0;
    }
-   // font-size: 30px;
-   // font-weight: 700;
-   // color: #0d0925;
-   // margin: 0 0 20px 0;
  }
  
  .content  {
@@ -223,8 +181,6 @@
    text-align: justify;
  }
  .text{
-
-
    @media screen and (min-width: 768px) {
      
    }
@@ -260,15 +216,27 @@
  
  .content button:hover {
    background: #cecece;
-   color: #000000;
+   color:$primary-text-color;
  }
  
  .slider {
-   position: absolute;
+   // position: absolute;
    bottom: 25px;
    left: 55%;
    transform: translateX(-50%);
    z-index: 1;
+   margin-top: -37px;
+   margin-left: 122px;
+   @media screen and (min-width: 768px) {
+      margin-left: 404px;
+      margin-top: -73px;
+   }
+   @media screen and (min-width: 1366px) {
+      margin-top: -32px;
+      margin-left:843px;
+      transform: translateX(-50%);
+      z-index: 1;
+   }
  }
  
  #slideImg:checked ~ .slider {
@@ -277,8 +245,8 @@
  
  .slider .slide {
    position: relative;
-   height: 10px;
-   width: 50px;
+   height: 13px;
+   width: 30px;
    background: #d9d9d9;
    border-radius: 5px;
    display: inline-flex;
@@ -286,17 +254,8 @@
    cursor: pointer;
  }
  
- 
- .slider .slide:before {
-   position: absolute;
-   content: '';
-   top: 0;
-   left: 0;
-   height: 100%;
-   width: -100%;
-   background: #000000;;
-   border-radius: 10px;
-   transform: scaleX(0);
+ .slider .slide:hover{
+    background-color: #000000;
    transition: transform .6s;
    transform-origin: left;
  }
@@ -307,8 +266,10 @@
  #slide_4:checked ~ .slider .slide_4:before{
    transform: scaleX(1);
    width: 100%;
+   
  }
  
  input {
    display: none;
  }
+ 
