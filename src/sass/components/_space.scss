@@ -42,7 +42,7 @@
   width: 350px;
   height: 270px;
   padding: 5px;
-  margin-left: 25px;
+  margin-left: 16px;
   margin-top: 25px;
   border-radius: 22px;
   @media screen and (min-width: 768px) {
@@ -59,7 +59,7 @@
   }
 }
 .space__img-wraper {
-  width: 400px;
+  width: 385px;
   @media screen and (min-width: 768px) {
     width: 335px;
   }
@@ -70,9 +70,9 @@
 .spase__holes-list {
   margin: 10px;
   background-image: url(../images/Group\ 141.png);
-  background-position-y: 213px;
+  background-position-y: 244px;
   background-repeat: no-repeat;
-
+  background-size: 390px;
   &:hover,
   &:focus {
     border-radius: 22px;
